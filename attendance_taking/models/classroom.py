@@ -14,7 +14,7 @@ class Classroom:
     self.rows = rows
     self.cols = cols
     self.attendance = np.zeros((rows, cols), dtype=int)
-    self.table_grid = None
+    self.table_grid = None  # type: np.ndarray | None
     self.assignments = {}
   
   def update_attendance(self, assignments: Dict[Tuple[int, int], Detection]):
